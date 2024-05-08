@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <main class="container">
+        <p> <a href="https://github.com/toluwani10/Basic-Calculator"> Link to Repo</a></p>
+        <section class="calculator">
+            <div>
+                <form>
+                    <input type="text" id="display" placeholder="0" readonly>
+                </form>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td><button  id="num"onclick="appendToDiaplay('7')">7</button></td>
+                        <td><button id="num"onclick="appendToDiaplay('8')">8</button></td>
+                        <td><button id="num" onclick="appendToDiaplay('9')">9</button></td>
+                        <td><button id="divide" onclick="appendToDiaplay('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  id="num" onclick="appendToDiaplay('4')">4</button></td>
+                        <td><button id="num" onclick="appendToDiaplay('5')">5</button></td>
+                        <td><button id="num" onclick="appendToDiaplay('6')">6</button></td>
+                        <td><button id="multiply" onclick="appendToDiaplay('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="num" onclick="appendToDiaplay('1')">1</button></td>
+                        <td><button  id="num" onclick="appendToDiaplay('2')">2</button></td>
+                        <td><button id="num" onclick="appendToDiaplay('3')">3</button></td>
+                        <td><button id="subtraction" onclick="appendToDiaplay('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button  id="num" onclick="appendToDiaplay('0')">0</button></td>
+                        <td><button onclick="appendToDiaplay('.')">.</button></td>
+                        <td><button id="add"onclick="appendToDiaplay('+')">+</button></td>
+                        <td><button onclick= "calculate ()"class="special-btn">=</button></td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
